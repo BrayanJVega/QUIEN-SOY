@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brayan Vega Garófalo — Desarrollador Fullstack</title>
+  <meta name="description"
+    content="Portfolio profesional de Brayan Vega Garófalo, Desarrollador Fullstack Junior especializado en NestJS, .NET Core, y automatización con IA.">
+  <meta property="og:title" content="Brayan Vega Garófalo — Desarrollador Fullstack">
+  <meta property="og:description"
+    content="Construyo aplicaciones completas: backend, frontend, automatización e integración con IA.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a class="nav-logo" href="#hero">
+      <img src="/img/logo (2).png" alt="Logo BVG" class="logo-img">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Perfil</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#formacion">Educación</a></li>
+      <li><a href="#habilidades">Skills</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO & PERFIL UNIFICADO -->
+  <section id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="container hero-container">
+      <div class="hero-header">
+        <h1 class="hero-name">
+          <span class="hero-line" data-delay="0">Brayan Jasmany</span>
+          <span class="hero-line" data-delay="1">Vega Garófalo</span>
+        </h1>
+        <p class="hero-role">
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </p>
+      </div>
+
+      <div class="hero-content-grid">
+        <div class="hero-bio">
+          <p>Desarrollador Fullstack Junior y Egresado de la <strong>Universidad de las Fuerzas Armadas ESPE</strong>
+            (en proceso de titulación). Cuento con sólida experiencia construyendo aplicaciones completas: desde el
+            diseño de bases de datos y desarrollo backend con <strong>NestJS / .NET</strong>, hasta la automatización
+            con <strong>Power Automate</strong> y despliegues en nubes como <strong>Azure y AWS</strong>.</p>
+          <p>Gracias a mi background integral, poseo una <strong>visión global del ciclo de vida del software</strong> y
+            una fuerte capacidad para la resolución de problemas. Listo para aportar valor desde el primer día.</p>
+
+          <div class="info-chips">
+            <div class="info-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Quito, Ecuador</span>
+            </div>
+            <a href="mailto:vegabrayan721@gmail.com" class="info-chip">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 7l-10 7L2 7" />
+              </svg>
+              <span>vegabrayan721@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-stats-container">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">Disponible para trabajar</span>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card" data-count="3">
+              <div class="stat-num">0+</div>
+              <div class="stat-lbl">Pasantías</div>
+            </div>
+            <div class="stat-card" data-count="6">
+              <div class="stat-num">0+</div>
+              <div class="stat-lbl">Tecnologías</div>
+            </div>
+            <div class="stat-card" data-count="2">
+              <div class="stat-num">0</div>
+              <div class="stat-lbl">Idiomas</div>
+            </div>
+            <div class="stat-card" data-count="7">
+              <div class="stat-num">0+</div>
+              <div class="stat-lbl">Cursos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Trayectoria</p>
+        <h2 class="section-title">Experiencia profesional</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <p class="timeline-period">Diciembre 2025 – Marzo 2026</p>
+              <span class="timeline-badge current">Actualidad</span>
+            </div>
+            <h3 class="timeline-role">Pasante de Innovación y Desarrollo</h3>
+            <p class="timeline-company">Alfanet · Quito, Ecuador</p>
+            <ul class="timeline-list">
+              <li>Desarrollé una solución Fullstack para la gestión de tickets de movilización, transporte y vuelos.
+                Construí el backend utilizando NestJS y automaticé las notificaciones y correos transaccionales
+                integrando Power Automate.</li>
+              <li>Implementé un Sistema de Fiscalización impulsado por Inteligencia Artificial. Me encargué de la
+                evaluación y optimización de prompts, así como de la arquitectura para el envío y recepción de datos
+                bidireccional consumiendo la API de Odoo.</li>
+              <li>Construí un Sistema de Gestión de Turnos para la atención al cliente, diseñando la integración directa
+                con los módulos de Odoo para asegurar la disponibilidad de datos en tiempo real.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <p class="timeline-period">Agosto 2025 – Noviembre 2025</p>
+            </div>
+            <h3 class="timeline-role">Pasante de Mesa de Servicios</h3>
+            <p class="timeline-company">Xtrim · Quito, Ecuador</p>
+            <ul class="timeline-list">
+              <li>Resolución de tickets de soporte técnico a usuarios internos.</li>
+              <li>Consultas en bases de datos para análisis y solución de incidencias.</li>
+              <li>Registro, seguimiento y escalamiento de requerimientos mediante la herramienta de mesa de servicios.
+              </li>
+              <li>Apoyo en la documentación de procedimientos y soluciones recurrentes.</li>
+            </ul>
+            <span class="badge-logro">✦ Logro: reducción del tiempo promedio de resolución de incidencias</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <p class="timeline-period">Octubre 2024 – Diciembre 2024</p>
+            </div>
+            <h3 class="timeline-role">Pasante de Infraestructura</h3>
+            <p class="timeline-company">Universidad de las Fuerzas Armadas ESPE · Quito, Ecuador</p>
+            <ul class="timeline-list">
+              <li>Actualización y diagramación de infraestructura física en datacenters.</li>
+              <li>Documentación de configuración de racks mediante herramientas de diseño técnico.</li>
+              <li>Apoyo en tareas de mantenimiento de redes y cableado estructurado.</li>
+            </ul>
+            <span class="badge-logro">✦ Logro: contribución a la actualización completa del inventario de equipos del
+              datacenter institucional</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN ACADÉMICA -->
+  <section id="formacion">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Educación</p>
+        <h2 class="section-title">Formación académica</h2>
+      </div>
+      <div class="edu-cards">
+        <div class="edu-card">
+          <div class="edu-card-accent"></div>
+          <div class="edu-info">
+            <p class="edu-degree">Ingeniería en Tecnologías de la Información</p>
+            <p class="edu-institution">Universidad de las Fuerzas Armadas ESPE</p>
+            <p class="edu-detail">Egresado · Tesis en desarrollo</p>
+          </div>
+          <span class="edu-year">2021 – 2026</span>
+        </div>
+        <div class="edu-card">
+          <div class="edu-card-accent"></div>
+          <div class="edu-info">
+            <p class="edu-degree">Bachiller en Ciencias Generales</p>
+            <p class="edu-institution">Colegio Nacional Conocoto · Programa del Bachillerato Internacional (IB)</p>
+            <ul class="edu-highlights">
+              <li>Asignaturas avanzadas en áreas científicas y tecnológicas</li>
+              <li>Desarrollo de habilidades de investigación, redacción y análisis crítico</li>
+              <li>Participación en el programa CAS, Monografía y Teoría del Conocimiento</li>
+            </ul>
+          </div>
+          <span class="edu-year">2020</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Competencias</p>
+        <h2 class="section-title">Habilidades destacadas</h2>
+      </div>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" id="skillsPrev" aria-label="Anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <div class="carousel-viewport" id="skillsCarousel">
+          <div class="carousel-track" id="skillsTrack">
+            <div class="skill-group">
+              <div class="skill-group-icon">⟨/⟩</div>
+              <p class="skill-group-title">Programación</p>
+              <ul class="skill-items">
+                <li>JavaScript / TypeScript</li>
+                <li>PHP</li>
+                <li>C# / .NET Core</li>
+                <li>NestJS</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-icon">◉</div>
+              <p class="skill-group-title">Bases de datos</p>
+              <ul class="skill-items">
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>TypeORM</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-icon">⬡</div>
+              <p class="skill-group-title">Infraestructura y redes</p>
+              <ul class="skill-items">
+                <li>Configuración de datacenters</li>
+                <li>Diagramación de racks</li>
+                <li>Redes y cableado estructurado</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-icon">☁</div>
+              <p class="skill-group-title">DevOps & Cloud</p>
+              <ul class="skill-items">
+                <li>Docker / Docker Compose</li>
+                <li>Cloud (AWS / Azure)</li>
+                <li>CI/CD & Git / GitHub</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-icon">🛡</div>
+              <p class="skill-group-title">Ciberseguridad</p>
+              <ul class="skill-items">
+                <li>Seguridad en redes</li>
+                <li>Desarrollo seguro</li>
+                <li>CompTIA Security+ (en curso)</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <div class="skill-group-icon">★</div>
+              <p class="skill-group-title">Habilidades blandas</p>
+              <ul class="skill-items">
+                <li>Pensamiento analítico</li>
+                <li>Comunicación efectiva</li>
+                <li>Aprendizaje autónomo</li>
+                <li>Orientación a resultados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="skillsNext" aria-label="Siguiente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+      <div class="carousel-dots" id="skillsDots"></div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Portafolio</p>
+        <h2 class="section-title">Proyectos destacados</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Automation-Tickets-CAB -->
+        <div class="project-card">
+          <div class="project-card-glow"></div>
+          <div class="project-number">01</div>
+          <h3 class="project-title">Automation-Tickets-CAB</h3>
+          <p class="project-type">Solución Empresarial · Fullstack</p>
+          <p class="project-desc">Sistema de gestión de tickets automatizado con arquitectura de monorepositorio e
+            integración con Azure AD.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">NestJS 11</span>
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">Azure AD</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- FiscalizApp -->
+        <div class="project-card">
+          <div class="project-card-glow"></div>
+          <div class="project-number">02</div>
+          <h3 class="project-title">FiscalizApp</h3>
+          <p class="project-type">Innovación · IA & Cloud</p>
+          <p class="project-desc">Plataforma de fiscalización con sincronización vía Odoo API y persistencia en AWS
+            DynamoDB.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">React + Vite</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">AWS DynamoDB</span>
+            <span class="tech-tag">Odoo API</span>
+          </div>
+        </div>
+
+        <!-- EBOOK-ALFANET -->
+        <div class="project-card">
+          <div class="project-card-glow"></div>
+          <div class="project-number">03</div>
+          <h3 class="project-title">EBOOK-ALFANET</h3>
+          <p class="project-type">Plataforma Cloud · Azure</p>
+          <p class="project-desc">Gestor de bibliotecas digitales con Azure MSAL y almacenamiento en Azure Blob Storage.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Azure Cosmos DB</span>
+            <span class="tech-tag">Azure Blob</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section id="cursos">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Formación continua</p>
+        <h2 class="section-title">Cursos y certificaciones</h2>
+      </div>
+      <div class="cursos-grid">
+        <div class="curso-card"
+          data-pdf="/Certificados/Networking_Essentials_certificate_bjvega4-espe-edu-ec_f63409ac-ecbd-4458-8830-0b53fefdffb4 (1).pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Cisco Networking Essentials</p>
+            <p class="curso-org">Cisco Networking Academy · 2023</p>
+          </div>
+        </div>
+        <div class="curso-card"
+          data-pdf="/Certificados/_certificate_vegabrayan721-gmail-com_1da336fd-53ec-43a0-b3c5-1a64ac57f75f (1).pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Introducción a la Ciberseguridad</p>
+            <p class="curso-org">Cisco Networking Academy · 2025</p>
+          </div>
+        </div>
+        <div class="curso-card" data-pdf="/Certificados/Ciberseguridad-CompTIA.pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Fundamentos de Ciberseguridad (CompTIA Security+ M1)</p>
+            <p class="curso-org">Udemy · 2025</p>
+          </div>
+        </div>
+        <div class="curso-card" data-pdf="/Certificados/BasesDeGit_Vega_Brayan.pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Bases de Git y GitHub</p>
+            <p class="curso-org">Desafío Latam · 2025</p>
+          </div>
+        </div>
+        <div class="curso-card" data-pdf="/Certificados/AprendePowerBI_Vega_Brayan.pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Aprende Power BI desde cero</p>
+            <p class="curso-org">Udemy · 2025</p>
+          </div>
+        </div>
+        <div class="curso-card" data-pdf="/Certificados/DesarrollaunaaplicaciónFullStacklaguíapráctica_Vega_Brayan.pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Desarrolla una Aplicación Full Stack: Guía Práctica</p>
+            <p class="curso-org">Udemy · 2025</p>
+          </div>
+        </div>
+        <div class="curso-card" data-pdf="/Certificados/AutomatizaciónInteligentesinCódigo_Vega_Brayan.pdf">
+          <div class="curso-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z" />
+              <polyline points="13 2 13 9 20 9" />
+            </svg></div>
+          <div>
+            <p class="curso-name">Automatización Inteligente sin Código</p>
+            <p class="curso-org">Desafío Latam · 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-label">¿Hablamos?</p>
+        <h2 class="section-title">Contacto</h2>
+      </div>
+      <p class="contact-intro">Estoy disponible para nuevas oportunidades laborales, colaboraciones o simplemente para
+        conversar sobre tecnología.</p>
+      <div class="contact-links">
+        <a href="mailto:vegabrayan721@gmail.com" class="contact-btn primary" id="contact-email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M22 7l-10 7L2 7" />
+          </svg>
+          <span>vegabrayan721@gmail.com</span>
+        </a>
+        </a>
+      </div>
+      <div class="contact-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <span>Galo Plaza Lasso, Quito 170144, Ecuador</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>Diseñado y desarrollado por <strong>Brayan Vega Garófalo</strong></p>
+      <p class="footer-year">© 2026 · Quito, Ecuador</p>
+    </div>
+  </footer>
+
+  <!-- MODAL CERTIFICADO -->
+  <div id="certModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="certFrame" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
