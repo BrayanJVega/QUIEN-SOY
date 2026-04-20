@@ -18,13 +18,15 @@ window.addEventListener('scroll', () => {
 
 // Mobile toggle
 navToggle.addEventListener('click', () => {
-  navToggle.classList.toggle('open');
+  const isOpen = navToggle.classList.toggle('open');
   navMenu.classList.toggle('open');
+  document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 });
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navToggle.classList.remove('open');
     navMenu.classList.remove('open');
+    document.body.style.overflow = 'auto';
   });
 });
 
@@ -64,12 +66,22 @@ const typingEl = document.getElementById('typingText');
 function typeEffect() {
   const current = roles[roleIndex];
   typingEl.textContent = current.substring(0, charIndex);
-  if (!deleting) {
-    charIndex++;
-    if (charIndex > current.length) { setTimeout(() => { deleting = true; typeEffect(); }, 2000); return; }
-  } else {
+  if (deleting) {
     charIndex--;
-    if (charIndex < 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; charIndex = 0; }
+    if (charIndex < 0) {
+      deleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      charIndex = 0;
+    }
+  } else {
+    charIndex++;
+    if (charIndex > current.length) {
+      setTimeout(() => {
+        deleting = true;
+        typeEffect();
+      }, 2000);
+      return;
+    }
   }
   setTimeout(typeEffect, deleting ? 30 : 60);
 }
@@ -104,8 +116,7 @@ if (canvas) {
   function drawLines() {
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x, dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
+        const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
         if (dist < 120) {
           ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
@@ -148,7 +159,7 @@ const counterObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       const card = e.target;
-      const target = parseInt(card.dataset.count);
+      const target = Number.parseInt(card.dataset.count, 10);
       const numEl = card.querySelector('.stat-num');
       const hasSuffix = numEl.textContent.includes('+');
       let current = 0;
@@ -188,8 +199,8 @@ if (track && prevBtn && nextBtn && dotsContainer) {
   let autoPlayInterval;
 
   function getCardsPerView() {
-    if (window.innerWidth < 640) return 1;
-    if (window.innerWidth < 900) return 2;
+    if (globalThis.innerWidth < 768) return 1;
+    if (globalThis.innerWidth < 1024) return 2;
     return 3;
   }
 
@@ -248,11 +259,29 @@ if (track && prevBtn && nextBtn && dotsContainer) {
 
   // Touch/drag support
   let startX = 0, isDragging = false;
-  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; isDragging = true; });
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  }, { passive: true });
+
+  track.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const moveX = e.touches[0].clientX;
+    const diff = startX - moveX;
+    // Prevent vertical scroll if horizontal swipe is detected
+    if (Math.abs(diff) > 10) {
+      // Logic to potentially shift track could go here
+    }
+  }, { passive: true });
+
   track.addEventListener('touchend', e => {
     if (!isDragging) return;
     const diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) { diff > 0 ? goNext() : goPrev(); resetAutoPlay(); }
+    if (Math.abs(diff) > 40) { // More sensitive threshold
+      if (diff > 0) goNext();
+      else goPrev();
+      resetAutoPlay();
+    }
     isDragging = false;
   });
 
@@ -271,7 +300,7 @@ const cursoCards = document.querySelectorAll('.curso-card');
 if (certModal && certFrame && closeModal) {
   cursoCards.forEach(card => {
     card.addEventListener('click', () => {
-      const pdfPath = card.getAttribute('data-pdf');
+      const pdfPath = card.dataset.pdf;
       if (pdfPath) {
         certFrame.src = pdfPath;
         certModal.style.display = 'block';
@@ -287,7 +316,7 @@ if (certModal && certFrame && closeModal) {
   };
 
   closeModal.addEventListener('click', closeFunc);
-  window.addEventListener('click', (e) => {
+  globalThis.addEventListener('click', (e) => {
     if (e.target === certModal) closeFunc();
   });
 }
