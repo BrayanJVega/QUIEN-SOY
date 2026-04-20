@@ -55,10 +55,11 @@ navLinks.forEach(link => {
 
 // ── TYPING EFFECT ──
 const roles = [
+  'Egresado en Ingeniería en Tecnologías de la Información · ESPE',
   'Desarrollador Fullstack Junior',
-  'Egresado en Ingeniería TI · ESPE',
-  'Backend · NestJS · .NET Core',
-  'Automatización con Power Automate'
+  'Frontend: React | Backend: NestJS',
+  'Base de Datos: MongoDB / MySQL',
+  'Despliegue: AWS & Azure'
 ];
 let roleIndex = 0, charIndex = 0, deleting = false;
 const typingEl = document.getElementById('typingText');
