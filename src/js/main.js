@@ -321,4 +321,41 @@ if (certModal && certFrame && closeModal) {
   });
 }
 
-console.log('Portfolio v2.0 Loaded ✨');
+// ── STAT CARDS INTERACTIVITY ──
+const statCards = document.querySelectorAll('.stat-card[data-target]');
+const langModal = document.getElementById('langModal');
+const closeLangModal = document.getElementById('closeLangModal');
+
+statCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const target = card.dataset.target;
+    if (target === 'modal-idiomas') {
+      if (langModal) {
+        langModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+    } else {
+      const targetEl = document.querySelector(target);
+      if (targetEl) {
+        const navHeight = document.getElementById('mainNav').offsetHeight;
+        window.scrollTo({
+          top: targetEl.offsetTop - navHeight,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+});
+
+if (langModal && closeLangModal) {
+  const closeLang = () => {
+    langModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
+  closeLangModal.addEventListener('click', closeLang);
+  window.addEventListener('click', (e) => {
+    if (e.target === langModal) closeLang();
+  });
+}
+
+console.log('Portfolio v2.1 Improvements Loaded ✨');

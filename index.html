@@ -34,7 +34,7 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#sobre">Perfil</a></li>
+      <li><a href="#hero">Perfil</a></li>
       <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#formacion">Educación</a></li>
       <li><a href="#habilidades">Skills</a></li>
@@ -92,19 +92,19 @@
             <span class="badge-text">Disponible para trabajar</span>
           </div>
           <div class="hero-stats">
-            <div class="stat-card" data-count="3">
+            <div class="stat-card" data-count="3" data-target="#experiencia">
               <div class="stat-num">0+</div>
               <div class="stat-lbl">Pasantías</div>
             </div>
-            <div class="stat-card" data-count="6">
+            <div class="stat-card" data-count="6" data-target="#habilidades">
               <div class="stat-num">0+</div>
               <div class="stat-lbl">Tecnologías</div>
             </div>
-            <div class="stat-card" data-count="2">
+            <div class="stat-card" data-count="2" data-target="modal-idiomas">
               <div class="stat-num">0</div>
               <div class="stat-lbl">Idiomas</div>
             </div>
-            <div class="stat-card" data-count="7">
+            <div class="stat-card" data-count="7" data-target="#cursos">
               <div class="stat-num">0+</div>
               <div class="stat-lbl">Cursos</div>
             </div>
@@ -143,6 +143,10 @@
                 bidireccional consumiendo la API de Odoo.</li>
               <li>Construí un Sistema de Gestión de Turnos para la atención al cliente, diseñando la integración directa
                 con los módulos de Odoo para asegurar la disponibilidad de datos en tiempo real.</li>
+              <li>
+                Desarrollé un Ebook Corporativo, donde se muestra la información de la empresa, el organigrama de los
+                departamentos, misión, visión, valores, historia de la empresa y principales noticias del mes.
+              </li>
             </ul>
           </div>
         </div>
@@ -318,51 +322,83 @@
         <h2 class="section-title">Proyectos destacados</h2>
       </div>
       <div class="projects-grid">
-        <!-- Automation-Tickets-CAB -->
+        <!-- Automated Financial Infrastructure -->
         <div class="project-card">
           <div class="project-card-glow"></div>
           <div class="project-number">01</div>
-          <h3 class="project-title">Automation-Tickets-CAB</h3>
-          <p class="project-type">Solución Empresarial · Fullstack</p>
-          <p class="project-desc">Sistema de gestión de tickets automatizado con arquitectura de monorepositorio e
-            integración con Azure AD.</p>
+          <h3 class="project-title">Automated Financial Infrastructure</h3>
+          <p class="project-type">2025 - 2026 · Infraestructura & Cloud</p>
+          <p class="project-desc">Orquestación multihonst en AWS & Kubernetes. Automatización de infraestructura
+            escalable con Terraform y pipelines CI/CD.</p>
+
           <div class="tech-tags">
-            <span class="tech-tag">NestJS 11</span>
-            <span class="tech-tag">React 19</span>
-            <span class="tech-tag">Azure AD</span>
-            <span class="tech-tag">MySQL</span>
+            <span class="stack-tag">AWS (EKS)</span>
+            <span class="stack-tag">Kubernetes</span>
+            <span class="stack-tag">Terraform</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">CI/CD</span>
+            <span class="stack-tag">GitHub Actions</span>
+            <span class="stack-tag">Mensajería Cloud</span>
+          </div>
+        </div>
+
+        <!-- Automation-Tickets-CAB -->
+        <div class="project-card">
+          <div class="project-card-glow"></div>
+          <div class="project-number">02</div>
+          <h3 class="project-title">Automation-Tickets-CAB</h3>
+          <p class="project-type">Empresarial · Fullstack</p>
+          <p class="project-desc">Gestión de tickets automatizada con arquitectura de monorepositorio e integración con
+            Azure AD.</p>
+
+          <div class="tech-tags">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Tailwind</span>
+            <span class="stack-tag">NestJS</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Azure Cloud</span>
+            <span class="stack-tag">GitHub Actions</span>
           </div>
         </div>
 
         <!-- FiscalizApp -->
         <div class="project-card">
           <div class="project-card-glow"></div>
-          <div class="project-number">02</div>
+          <div class="project-number">03</div>
           <h3 class="project-title">FiscalizApp</h3>
           <p class="project-type">Innovación · IA & Cloud</p>
-          <p class="project-desc">Plataforma de fiscalización con sincronización vía Odoo API y persistencia en AWS
-            DynamoDB.</p>
+          <p class="project-desc">Sincronización vía Odoo API y persistencia en AWS DynamoDB para procesos de
+            fiscalización.</p>
+
           <div class="tech-tags">
-            <span class="tech-tag">React + Vite</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">AWS DynamoDB</span>
-            <span class="tech-tag">Odoo API</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Vite</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">AWS EC2</span>
+            <span class="stack-tag">AWS CloudFront</span>
+            <span class="stack-tag">DynamoDB</span>
+            <span class="stack-tag">Odoo API</span>
           </div>
         </div>
 
         <!-- EBOOK-ALFANET -->
         <div class="project-card">
           <div class="project-card-glow"></div>
-          <div class="project-number">03</div>
+          <div class="project-number">04</div>
           <h3 class="project-title">EBOOK-ALFANET</h3>
-          <p class="project-type">Plataforma Cloud · Azure</p>
+          <p class="project-type">Cloud · Azure</p>
           <p class="project-desc">Gestor de bibliotecas digitales con Azure MSAL y almacenamiento en Azure Blob Storage.
           </p>
+
           <div class="tech-tags">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Azure Cosmos DB</span>
-            <span class="tech-tag">Azure Blob</span>
-            <span class="tech-tag">TypeScript</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Cosmos DB</span>
+            <span class="stack-tag">Blob Storage</span>
+            <span class="stack-tag">Azure MSAL</span>
           </div>
         </div>
       </div>
@@ -491,6 +527,26 @@
     <div class="modal-content">
       <span class="close-modal">&times;</span>
       <iframe id="certFrame" src="" title="Visualizador de Certificados" style="border: none;"></iframe>
+    </div>
+  </div>
+
+  <!-- MODAL IDIOMAS -->
+  <div id="langModal" class="modal">
+    <div class="modal-content lang-modal-content">
+      <span class="close-modal" id="closeLangModal">&times;</span>
+      <div class="lang-modal-header">
+        <h3>Idiomas</h3>
+      </div>
+      <div class="lang-list">
+        <div class="lang-item">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo</span>
+        </div>
+        <div class="lang-item">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">B1 (Intermedio)</span>
+        </div>
+      </div>
     </div>
   </div>
 
