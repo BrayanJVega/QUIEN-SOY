@@ -54,7 +54,14 @@ navLinks.forEach(link => {
 });
 
 // ── TYPING EFFECT ──
-const roles = [
+const isEnglish = document.documentElement.lang === 'en';
+const roles = isEnglish ? [
+  'Information Technology Engineering Graduate · ESPE',
+  'Junior Fullstack Developer',
+  'Frontend: React | Backend: NestJS',
+  'Database: MongoDB / MySQL',
+  'Deployment: AWS & Azure'
+] : [
   'Egresado en Ingeniería en Tecnologías de la Información · ESPE',
   'Desarrollador Fullstack Junior',
   'Frontend: React | Backend: NestJS',
