@@ -2165,56 +2165,72 @@ img {
     font-size: .52rem;
   }
 
-  /* ── MOBILE INTERACTIVE ROOM (HORIZONTAL SCROLL) ── */
+  /* ── MOBILE INTERACTIVE ROOM (NO SCROLL) ── */
   .scene-container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
     width: 100vw;
-    scroll-behavior: smooth;
-  }
-  
-  .scene-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for cleaner look */
+    height: 100vh;
+    overflow: hidden;
   }
 
-  .scene-bg, .hotspots-layer, .scene-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: max(100vw, 177.77vh); /* Force 16:9 aspect ratio */
+  .scene-bg,
+  .hotspots-layer,
+  .scene-overlay {
+    width: 100vw;
     height: 100vh;
   }
-  
-  .scene-bg {
-    background-size: 100% 100%;
-    background-position: left center;
-  }
 
-  /* Dummy element to enforce scroll width */
-  .scene-container::after {
-    content: '';
-    display: block;
-    width: max(100vw, 177.77vh);
-    height: 1px;
+  .scene-bg {
+    background-size: cover;
+    background-position: center;
   }
 
   /* ── AVATAR ── */
   .avatar-container {
-    width: clamp(120px, 25vh, 200px);
-    left: calc(max(100vw, 177.77vh) / 2); /* Center in the wide room */
+    width: clamp(200px, 60vw, 320px);
+    left: 50% !important;
     transform: translateX(-50%);
-    bottom: 60vh; /* Safely above the 58vh panel */
+    bottom: 47vh !important; /* Just resting on the panel */
+    z-index: 250 !important; /* Always in front */
   }
 
   .avatar-container.hidden {
-    width: clamp(140px, 30vh, 220px);
-    left: calc(max(100vw, 177.77vh) / 2); /* Center in the wide room */
+    width: clamp(260px, 75vw, 400px); /* MASSIVE on main screen */
+    left: 50% !important;
     transform: translateX(-50%);
-    bottom: 5rem;
+    bottom: 4.5rem !important;
+    z-index: 250 !important;
   }
 
-  /* Ensure avatar stays fixed if we want it to follow screen, but since it's part of the room, it should stay in the center of the room! */
+  /* ── HOTSPOTS MANUAL MOBILE POSITIONING ── */
+  #hs-about {
+    left: 20% !important;
+    top: 15% !important;
+  }
+
+  #hs-experience {
+    left: 80% !important;
+    top: 25% !important;
+  }
+
+  #hs-projects {
+    left: 20% !important;
+    top: 35% !important;
+  }
+
+  #hs-technologies {
+    left: 80% !important;
+    top: 45% !important;
+  }
+
+  #hs-certifications {
+    left: 20% !important;
+    top: 55% !important;
+  }
+
+  #hs-softSkills {
+    left: 80% !important;
+    top: 65% !important;
+  }
 
   /* ── PANEL ── */
   .info-panel {
@@ -2223,7 +2239,7 @@ img {
     right: 0;
     bottom: 0;
     top: auto;
-    height: 58vh;
+    height: 48vh;
     max-width: 100%;
     border-radius: 18px 18px 0 0;
     border-left: none;
@@ -2335,7 +2351,7 @@ img {
   }
 
   .info-panel {
-    height: 62vh;
+    height: 50vh;
   }
 
   .panel-header {
@@ -2426,7 +2442,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .lang-toggle-btn:hover {
