@@ -217,32 +217,122 @@ footer{background:var(--bg);border-top:1px solid var(--border);text-align:center
 .stagger-1{transition-delay:.05s}.stagger-2{transition-delay:.1s}.stagger-3{transition-delay:.15s}.stagger-4{transition-delay:.2s}.stagger-5{transition-delay:.25s}.stagger-6{transition-delay:.3s}.stagger-7{transition-delay:.35s}
 
 /* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .container{padding:0 1.5rem}
+  .hero-content-grid{gap:2rem;padding:2rem}
+  .hero-stats{gap:.8rem}
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+}
+
 @media(max-width:768px){
   nav{padding:0 1.25rem}
   .nav-toggle{display:flex}
   .nav-links{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(10,10,15,0.98);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;visibility:hidden;pointer-events:none;transition:all .4s var(--ease);z-index:1000;padding:2rem}
   .nav-links.open{opacity:1;visibility:visible;pointer-events:all}
   .nav-links a{font-size:1.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text)}
-  section{padding:5rem 1.25rem}
+  section{padding:4rem 1.25rem}
   .container{padding:0 1rem}
-  .section-title{font-size:2rem}
+  .section-title{font-size:clamp(1.6rem,5vw,2rem)}
+  .section-header{margin-bottom:1.2rem}
   .hero-name{font-size:clamp(2.2rem,10vw,3.5rem)}
-  .hero-content-grid{grid-template-columns:1fr;gap:2rem;padding:1.5rem}
-  .hero-container{gap:2rem}
+  #hero{padding:80px 1.25rem 40px}
+  .hero-content-grid{grid-template-columns:1fr;gap:1.5rem;padding:1.25rem}
+  .hero-container{gap:1.5rem}
   .hero-stats{grid-template-columns:repeat(2,1fr);gap:0.75rem}
-  .hero-bio p{font-size:1rem}
-  .info-chips{flex-direction:column;gap:1rem}
+  .hero-bio p{font-size:0.95rem;margin-bottom:1rem}
+  .hero-bio p:last-child{margin-bottom:0}
+  .hero-actions{justify-content:center;width:100%}
+  .info-chips{flex-direction:column;gap:0.75rem;align-items:flex-start}
+  .hero-stats-container{gap:1rem}
   .timeline{padding-left:1.5rem}
   .timeline-marker{left:-1.5rem}
   .timeline-content{padding:1rem}
+  .timeline-role{font-size:1.1rem}
+  .timeline-list li{font-size:.88rem}
   .edu-card{flex-direction:column;gap:0.5rem;padding:1.25rem}
-  .edu-year{white-space:normal}
-  .projects-grid{grid-template-columns:1fr}
+  .edu-year{white-space:normal;align-self:flex-start}
+  .edu-degree{font-size:1rem}
+  .projects-grid{grid-template-columns:1fr;gap:1.25rem}
+  .project-card{padding:1.5rem}
+  .project-number{font-size:2.5rem;top:.75rem;right:1rem}
   .carousel-btn{display:none}
   .carousel-track .skill-group{min-width:100%}
   .skill-group{padding:2rem 1.5rem;text-align:center}
   .skill-items li{justify-content:center}
-  .modal-content{width:95%;height:85vh;margin:5% auto}
+  .cursos-grid{grid-template-columns:1fr}
+  .curso-card{padding:1rem 1.2rem}
+  .contact-intro{font-size:.95rem;margin-bottom:2rem}
+  .contact-links{flex-direction:column;align-items:stretch}
+  .contact-btn{justify-content:center}
+  .modal-content{width:95%;height:85vh;margin:5% auto;border-radius:var(--radius-sm)}
+  .lang-modal-content{width:90%!important;margin-top:20vh!important}
+  .hero-badge{align-self:center}
+}
+
+@media(max-width:480px){
+  html{font-size:15px}
+  nav{padding:0 1rem;height:56px}
+  nav.scrolled{height:48px}
+  .logo-img{height:26px}
+  .nav-links a{font-size:1.4rem}
+  #hero{padding:72px 1rem 32px}
+  section{padding:3rem 1rem}
+  .container{padding:0 .75rem}
+  .hero-content-grid{padding:1rem;border-radius:var(--radius-sm)}
+  .hero-name{font-size:clamp(1.8rem,8vw,2.6rem)}
+  .hero-role{font-size:clamp(.9rem,3vw,1.1rem)}
+  .hero-stats{grid-template-columns:1fr 1fr;gap:.5rem}
+  .stat-card{padding:1rem}
+  .stat-num{font-size:1.8rem}
+  .info-chips{gap:.5rem}
+  .info-chip{font-size:.8rem}
+  .section-title{font-size:clamp(1.4rem,6vw,1.7rem)}
+  .timeline{padding-left:1.2rem}
+  .timeline-marker{left:-1.2rem}
+  .timeline-dot{width:12px;height:12px}
+  .timeline-content{padding:.85rem}
+  .timeline-role{font-size:1rem}
+  .timeline-header{gap:.5rem}
+  .timeline-period{font-size:.75rem}
+  .timeline-list li{font-size:.85rem;padding:.25rem 0 .25rem 1rem}
+  .badge-logro{font-size:.75rem;padding:.25rem .6rem}
+  .project-card{padding:1.25rem}
+  .project-title{font-size:1.1rem}
+  .project-desc{font-size:.88rem}
+  .project-number{font-size:2rem;top:.5rem;right:.75rem}
+  .tech-tags{gap:.35rem}
+  .stack-tag{font-size:.72rem;padding:.25rem .6rem}
+  .curso-card{padding:.85rem 1rem;gap:.75rem}
+  .curso-name{font-size:.85rem}
+  .contact-btn{padding:.65rem 1.2rem;font-size:.82rem}
+  .contact-location{font-size:.8rem;flex-wrap:wrap;text-align:center}
+  .contact-location svg{flex-shrink:0}
+  .footer-content p{font-size:.78rem}
+  .hero-badge{padding:.3rem .8rem}
+  .badge-text{font-size:.72rem}
+  .hero-actions{flex-direction:column;gap:.6rem}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .carousel-wrapper{gap:.5rem}
+  .section-header.center .section-title{font-size:clamp(1.3rem,5vw,1.6rem)}
+  .modal-content{width:100%;height:90vh;margin:0;border-radius:0}
+  .close-modal{top:10px;right:15px;font-size:28px}
+  .lang-modal-content{width:95%!important;margin-top:10vh!important;padding:1.5rem!important}
+  .lang-item{padding:.6rem .8rem}
+}
+
+@media(max-width:360px){
+  html{font-size:13px}
+  .hero-name{font-size:clamp(1.5rem,7vw,2rem)}
+  .hero-content-grid{padding:.85rem;gap:1rem}
+  .hero-stats{gap:.35rem}
+  .stat-card{padding:.75rem .5rem}
+  .stat-num{font-size:1.5rem}
+  .stat-lbl{font-size:.7rem}
+  .section-title{font-size:1.3rem}
+  .timeline-role{font-size:.95rem}
+  .project-title{font-size:1rem}
+  .nav-links a{font-size:1.2rem}
+  .hero-stats-container{gap:.75rem}
 }
 
 /* ── MODAL ── */

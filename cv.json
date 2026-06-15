@@ -1,0 +1,670 @@
+{
+  "es": {
+    "personal": {
+      "name": "Brayan Jasmany Vega Garófalo",
+      "firstName": "Brayan",
+      "title": "Desarrollador Fullstack Junior",
+      "subtitle": "Backend · Cloud · DevOps",
+      "location": "Quito, Ecuador",
+      "availability": true,
+      "availabilityText": "Disponibilidad full-time e inmediata",
+      "photo": "img/yo3d.png",
+      "email": "vegabrayan721@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/brayanvegadev/",
+      "github": "https://github.com/BrayanJVega",
+      "whatsapp": "https://wa.me/593995512177",
+      "cv": "cv/CV_VEGA_BRAYAN.pdf"
+    },
+    "about": {
+      "headline": "Desarrollador Fullstack Junior enfocado en Arquitectura y Cloud",
+      "description": [
+        "Egresado en Tecnologías de la Información con experiencia práctica en la arquitectura, desarrollo y despliegue de soluciones end-to-end.",
+        "Sólido dominio del ecosistema JavaScript/TypeScript (React, Node.js, NestJS) y diseño de interfaces con Tailwind CSS, respaldado por backend en .NET Core.",
+        "Capacidad demostrada para orquestar infraestructura escalable en la nube utilizando AWS (App Runner, Amplify, S3) y herramientas de contenerización (Docker, Kubernetes). Experto en la integración de bases de datos relacionales y NoSQL (DynamoDB, PostgreSQL) y en la automatización de flujos empresariales.",
+        "Actualmente finalizando la etapa de tesis, contando con disponibilidad full-time e inmediata para aportar valor en equipos ágiles y posiciones remotas."
+      ],
+      "highlights": [
+        { "icon": "⟨/⟩", "text": "React & TypeScript" },
+        { "icon": "⚙️", "text": "NestJS & .NET Core" },
+        { "icon": "☁", "text": "AWS & Azure" },
+        { "icon": "🐳", "text": "Docker & Kubernetes" }
+      ],
+      "stats": [
+        { "value": "3", "label": "Pasantías" },
+        { "value": "6+", "label": "Tecnologías" },
+        { "value": "4+", "label": "Proyectos" },
+        { "value": "7+", "label": "Certificados" }
+      ]
+    },
+    "experience": [
+      {
+        "period": "Dic 2025 – May 2026",
+        "badge": "Reciente",
+        "role": "Pasante de Innovación y Desarrollo",
+        "company": "Alfanet",
+        "location": "Quito, Ecuador",
+        "color": "#4FC3F7",
+        "achievements": [
+          "Desarrollo de la plataforma logística Automation-Tickets-CAB para la gestión de tickets de movilización, transporte y vuelos. Construcción del frontend utilizando React, TypeScript y Tailwind CSS, y desarrollo del backend con NestJS, automatizando notificaciones y correos transaccionales mediante Power Automate.",
+          "Implementación de Fiscalizapp, un Sistema de Fiscalización con Inteligencia Artificial, evaluando prompts y diseñando una arquitectura bidireccional consumiendo la API de Odoo. Despliegue de servicios y gestión de la nube utilizando AWS.",
+          "Construcción del directorio corporativo EBOOK-ALFANET garantizando la disponibilidad de datos en tiempo real y mejorando la atención al cliente."
+        ],
+        "achievement_badge": "Stack Técnico: React, TypeScript, Tailwind CSS, NestJS, Odoo, Power Automate, AWS, MySQL, IA Prompts."
+      },
+      {
+        "period": "Ago 2025 – Nov 2025",
+        "badge": null,
+        "role": "Pasante de Mesa de Servicios",
+        "company": "Xtrim",
+        "location": "Quito, Ecuador",
+        "color": "#9C27B0",
+        "achievements": [
+          "Resolución de tickets de soporte técnico para usuarios internos, aplicando análisis de causas raíz para reducir significativamente el tiempo promedio de resolución de incidencias.",
+          "Ejecución de consultas y análisis estructurado de bases de datos para el diagnóstico y solución definitiva de incidencias recurrentes.",
+          "Documentación técnica de procedimientos, estandarizando flujos de respuesta para optimizar la eficiencia del equipo de soporte."
+        ],
+        "achievement_badge": "Stack Técnico: SQL, Gestión de Tickets, Análisis de Logs, Soporte IT."
+      },
+      {
+        "period": "Oct 2024 – Dic 2024",
+        "badge": null,
+        "role": "Pasante de Infraestructura",
+        "company": "Universidad de las Fuerzas Armadas ESPE",
+        "location": "Quito, Ecuador",
+        "color": "#00BCD4",
+        "achievements": [
+          "Actualización y diagramación de infraestructura física en datacenters.",
+          "Documentación técnica de la configuración de racks empleando herramientas avanzadas de diseño técnico.",
+          "Soporte directo en tareas críticas de mantenimiento de redes, protocolos de comunicación y cableado estructurado."
+        ],
+        "achievement_badge": null
+      }
+    ],
+    "education": {
+      "period": "2021 – 2026",
+      "institution": "Universidad de las Fuerzas Armadas ESPE",
+      "degree": "Ingeniería en Tecnologías de la Información",
+      "status": "Egresado (tesis en desarrollo)"
+    },
+    "skills": [
+      {
+        "category": "Lenguajes",
+        "icon": "⟨/⟩",
+        "color": "#4FC3F7",
+        "items": [
+          { "name": "JavaScript / TypeScript", "level": 90 },
+          { "name": "C# / PHP", "level": 75 },
+          { "name": "SQL", "level": 85 }
+        ]
+      },
+      {
+        "category": "Frontend",
+        "icon": "◈",
+        "color": "#E91E63",
+        "items": [
+          { "name": "React", "level": 85 },
+          { "name": "Tailwind CSS", "level": 80 }
+        ]
+      },
+      {
+        "category": "Backend",
+        "icon": "⚙️",
+        "color": "#9C27B0",
+        "items": [
+          { "name": "Node.js / NestJS", "level": 85 },
+          { "name": ".NET Core", "level": 75 },
+          { "name": "APIs RESTful", "level": 85 },
+          { "name": "TypeORM", "level": 80 }
+        ]
+      },
+      {
+        "category": "Cloud Computing & IaC",
+        "icon": "☁",
+        "color": "#00BCD4",
+        "items": [
+          { "name": "AWS (EKS, Cognito, S3)", "level": 80 },
+          { "name": "Azure (App Service)", "level": 75 },
+          { "name": "Terraform", "level": 70 }
+        ]
+      },
+      {
+        "category": "DevOps & Contenedores",
+        "icon": "🐳",
+        "color": "#FF9800",
+        "items": [
+          { "name": "Docker / Kubernetes", "level": 80 },
+          { "name": "CI/CD / Git / GitHub", "level": 85 }
+        ]
+      },
+      {
+        "category": "Bases de Datos",
+        "icon": "◉",
+        "color": "#4CAF50",
+        "items": [
+          { "name": "PostgreSQL / MySQL / SQL Server", "level": 85 },
+          { "name": "MongoDB / DynamoDB / Cosmos DB", "level": 80 }
+        ]
+      },
+      {
+        "category": "Sistemas & Seguridad",
+        "icon": "🛡",
+        "color": "#FF5722",
+        "items": [
+          { "name": "Power Automate / Odoo", "level": 80 },
+          { "name": "Desarrollo Seguro & Redes", "level": 70 }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "number": "01",
+        "title": "Motor de Simulación de Fórmula 1",
+        "type": ".NET & Azure",
+        "description": "Aplicación de telemetría y rendimiento en tiempo real que simula el comportamiento de vehículos de Fórmula 1, gestionando tiempos de vuelta y analíticas avanzadas.",
+        "achievements": [
+          "Desarrollo de controladores RESTful e implementación de patrones de Arquitectura Limpia para el manejo eficiente y estructurado de los datos.",
+          "Diseño de un esquema de persistencia de datos híbrido, utilizando SQL Server como motor principal y MongoDB como alternativa documental.",
+          "Despliegue y configuración en la nube mediante Microsoft Azure (App Service), garantizando alta disponibilidad."
+        ],
+        "tags": [".NET Core", "Azure App Service", "SQL Server", "MongoDB", "REST APIs", "Arquitectura Limpia"],
+        "github": null,
+        "color": "#4FC3F7"
+      },
+      {
+        "number": "02",
+        "title": "Automated Financial Infrastructure",
+        "type": "Multi-Bank Orchestration | AWS & Kubernetes",
+        "description": "Sistema de orquestación diseñado para la automatización del aprovisionamiento de infraestructura financiera en la nube, garantizando entornos repetibles y escalables.",
+        "achievements": [
+          "Despliegue, orquestación y gestión de microservicios contenerizados utilizando Docker y Amazon EKS (Kubernetes).",
+          "Automatización de Infraestructura como Código (IaC) mediante Terraform.",
+          "Construcción e implementación de pipelines CI/CD utilizando Git para automatizado continuo.",
+          "Integración de bases de datos (PostgreSQL), mensajería, y securización implementando AWS Cognito."
+        ],
+        "tags": ["AWS EKS", "Cognito", "Kubernetes", "Terraform", "Docker", "CI/CD", "PostgreSQL"],
+        "github": null,
+        "color": "#9C27B0"
+      }
+    ],
+    "technologies": {
+      "categories": [
+        {
+          "name": "Backend",
+          "color": "#4FC3F7",
+          "items": ["NestJS", "Node.js", ".NET Core", "PHP", "REST APIs", "Odoo API"]
+        },
+        {
+          "name": "Frontend",
+          "color": "#E91E63",
+          "items": ["React", "TypeScript", "JavaScript", "Vite", "Tailwind CSS", "HTML/CSS"]
+        },
+        {
+          "name": "Bases de Datos",
+          "color": "#9C27B0",
+          "items": ["PostgreSQL", "MySQL", "MongoDB", "TypeORM", "DynamoDB", "Cosmos DB"]
+        },
+        {
+          "name": "DevOps & Cloud",
+          "color": "#00BCD4",
+          "items": ["Docker", "Kubernetes", "Terraform", "AWS", "Azure", "GitHub Actions", "CI/CD"]
+        },
+        {
+          "name": "Automatización & IA",
+          "color": "#FF9800",
+          "items": ["Power Automate", "Prompt Engineering", "LLM APIs"]
+        },
+        {
+          "name": "Herramientas",
+          "color": "#4CAF50",
+          "items": ["Git / GitHub", "VS Code", "Postman", "Draw.io", "Power BI"]
+        }
+      ]
+    },
+    "certifications": [
+      {
+        "year": "2023",
+        "name": "Cisco Networking Essentials",
+        "org": "Cisco Networking Academy",
+        "pdf": "Certificados/Networking_Essentials_certificate_bjvega4-espe-edu-ec_f63409ac-ecbd-4458-8830-0b53fefdffb4 (1).pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Introducción a la Ciberseguridad",
+        "org": "Cisco Networking Academy",
+        "pdf": "Certificados/_certificate_vegabrayan721-gmail-com_1da336fd-53ec-43a0-b3c5-1a64ac57f75f (1).pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Fundamentos de Ciberseguridad (CompTIA Security+ M1)",
+        "org": "Udemy",
+        "pdf": "Certificados/Ciberseguridad-CompTIA.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Bases de Git y GitHub",
+        "org": "Desafío Latam",
+        "pdf": "Certificados/BasesDeGit_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Aprende Power BI desde cero",
+        "org": "Udemy",
+        "pdf": "Certificados/AprendePowerBI_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Desarrolla una Aplicación Full Stack: Guía Práctica",
+        "org": "Udemy",
+        "pdf": "Certificados/DesarrollaunaaplicaciónFullStacklaguíapráctica_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Automatización Inteligente sin Código",
+        "org": "Desafío Latam",
+        "pdf": "Certificados/AutomatizaciónInteligentesinCódigo_Vega_Brayan.pdf"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Pensamiento Analítico",
+        "icon": "🧠",
+        "desc": "Descomposición de problemas complejos en partes manejables para encontrar soluciones efectivas y eficientes."
+      },
+      {
+        "name": "Comunicación Efectiva",
+        "icon": "💬",
+        "desc": "Capacidad de transmitir ideas técnicas de forma clara tanto a equipos técnicos como a stakeholders no técnicos."
+      },
+      {
+        "name": "Aprendizaje Autónomo",
+        "icon": "📚",
+        "desc": "Autodidacta por naturaleza, siempre explorando nuevas tecnologías, frameworks y mejores prácticas del sector."
+      },
+      {
+        "name": "Orientación a Resultados",
+        "icon": "🎯",
+        "desc": "Enfoque constante en entregar valor concreto y medible en cada proyecto, iteración y tarea asignada."
+      },
+      {
+        "name": "Trabajo en Equipo",
+        "icon": "🤝",
+        "desc": "Colaboración efectiva en entornos ágiles, contribuyendo activamente al éxito colectivo del equipo."
+      },
+      {
+        "name": "Resolución de Problemas",
+        "icon": "⚡",
+        "desc": "Abordaje sistemático y creativo ante desafíos técnicos complejos, incluso bajo presión de tiempo."
+      }
+    ],
+    "goals": [
+      {
+        "icon": "🚀",
+        "title": "Rol Backend Senior",
+        "desc": "Alcanzar un puesto como Desarrollador Backend Senior especializado en arquitecturas cloud-native y microservicios distribuidos."
+      },
+      {
+        "icon": "🏆",
+        "title": "Certificación AWS",
+        "desc": "Obtener la certificación AWS Solutions Architect Associate en 2026 para validar mis conocimientos en cloud."
+      },
+      {
+        "icon": "🔐",
+        "title": "CompTIA Security+",
+        "desc": "Completar y aprobar la certificación CompTIA Security+ para profundizar en seguridad aplicada al desarrollo."
+      },
+      {
+        "icon": "🤖",
+        "title": "Especialización en IA",
+        "desc": "Profundizar en la integración de sistemas de IA/ML en aplicaciones empresariales reales de alto impacto."
+      },
+      {
+        "icon": "🌎",
+        "title": "Impacto Regional",
+        "desc": "Contribuir a proyectos tecnológicos innovadores que transformen positivamente el ecosistema digital de América Latina."
+      }
+    ],
+    "contact": {
+      "email": "vegabrayan721@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/brayanvegadev/",
+      "github": "https://github.com/BrayanJVega",
+      "whatsapp": "https://wa.me/593995512177",
+      "location": "Quito, Ecuador",
+      "cv": "cv/CV_VEGA_BRAYAN.pdf",
+      "message": "¡Hola! Estoy disponible para nuevas oportunidades laborales, colaboraciones técnicas o simplemente para conversar sobre tecnología. ¡No dudes en escribirme!"
+    }
+  },
+  "en": {
+    "personal": {
+      "name": "Brayan Jasmany Vega Garófalo",
+      "firstName": "Brayan",
+      "title": "Junior Fullstack Developer",
+      "subtitle": "Backend · Cloud · DevOps",
+      "location": "Quito, Ecuador",
+      "availability": true,
+      "availabilityText": "Full-time availability and ready to start",
+      "photo": "img/yo3d.png",
+      "email": "vegabrayan721@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/brayanvegadev/",
+      "github": "https://github.com/BrayanJVega",
+      "whatsapp": "https://wa.me/593995512177",
+      "cv": "cv/CV_VEGA_BRAYAN_en.pdf"
+    },
+    "about": {
+      "headline": "Junior Fullstack Developer focused on Architecture and Cloud",
+      "description": [
+        "Information Technology graduate with practical experience in architecture, development, and deployment of end-to-end solutions.",
+        "Solid command of the JavaScript/TypeScript ecosystem (React, Node.js, NestJS) and interface design with Tailwind CSS, backed by a .NET Core backend.",
+        "Demonstrated ability to orchestrate scalable cloud infrastructure using AWS (App Runner, Amplify, S3) and containerization tools (Docker, Kubernetes). Expert in integrating relational and NoSQL databases (DynamoDB, PostgreSQL) and automating enterprise workflows.",
+        "Currently finishing my thesis, with full-time and immediate availability to add value in agile teams and remote positions."
+      ],
+      "highlights": [
+        { "icon": "⟨/⟩", "text": "React & TypeScript" },
+        { "icon": "⚙️", "text": "NestJS & .NET Core" },
+        { "icon": "☁", "text": "AWS & Azure" },
+        { "icon": "🐳", "text": "Docker & Kubernetes" }
+      ],
+      "stats": [
+        { "value": "3", "label": "Internships" },
+        { "value": "6+", "label": "Technologies" },
+        { "value": "4+", "label": "Projects" },
+        { "value": "7+", "label": "Certifications" }
+      ]
+    },
+    "experience": [
+      {
+        "period": "Dec 2025 – May 2026",
+        "badge": "Recent",
+        "role": "Innovation and Development Intern",
+        "company": "Alfanet",
+        "location": "Quito, Ecuador",
+        "color": "#4FC3F7",
+        "achievements": [
+          "Developed the Automation-Tickets-CAB logistics platform for managing mobilization, transportation, and flight tickets. Built the frontend using React, TypeScript, and Tailwind CSS, and developed the backend with NestJS, automating notifications and transactional emails via Power Automate.",
+          "Implemented Fiscalizapp, an AI-powered Auditing System, evaluating prompts and designing a bidirectional architecture consuming the Odoo API. Deployed services and managed cloud infrastructure using AWS.",
+          "Built the EBOOK-ALFANET corporate directory ensuring real-time data availability and improving customer service."
+        ],
+        "achievement_badge": "Tech Stack: React, TypeScript, Tailwind CSS, NestJS, Odoo, Power Automate, AWS, MySQL, AI Prompts."
+      },
+      {
+        "period": "Aug 2025 – Nov 2025",
+        "badge": null,
+        "role": "Service Desk Intern",
+        "company": "Xtrim",
+        "location": "Quito, Ecuador",
+        "color": "#9C27B0",
+        "achievements": [
+          "Resolved internal user technical support tickets, applying root cause analysis to significantly reduce average incident resolution time.",
+          "Executed queries and structured database analysis to diagnose and definitively resolve recurring incidents.",
+          "Authored technical documentation of procedures, standardizing response flows to optimize the support team's efficiency."
+        ],
+        "achievement_badge": "Tech Stack: SQL, Ticket Management, Log Analysis, IT Support."
+      },
+      {
+        "period": "Oct 2024 – Dec 2024",
+        "badge": null,
+        "role": "Infrastructure Intern",
+        "company": "Universidad de las Fuerzas Armadas ESPE",
+        "location": "Quito, Ecuador",
+        "color": "#00BCD4",
+        "achievements": [
+          "Updated and diagrammed physical infrastructure in datacenters.",
+          "Created technical documentation for rack configuration using advanced technical design tools.",
+          "Provided direct support for critical network maintenance tasks, communication protocols, and structured cabling."
+        ],
+        "achievement_badge": null
+      }
+    ],
+    "education": {
+      "period": "2021 – 2026",
+      "institution": "Universidad de las Fuerzas Armadas ESPE",
+      "degree": "Information Technology Engineering",
+      "status": "Graduate (thesis in progress)"
+    },
+    "skills": [
+      {
+        "category": "Languages",
+        "icon": "⟨/⟩",
+        "color": "#4FC3F7",
+        "items": [
+          { "name": "JavaScript / TypeScript", "level": 90 },
+          { "name": "C# / PHP", "level": 75 },
+          { "name": "SQL", "level": 85 }
+        ]
+      },
+      {
+        "category": "Frontend",
+        "icon": "◈",
+        "color": "#E91E63",
+        "items": [
+          { "name": "React", "level": 85 },
+          { "name": "Tailwind CSS", "level": 80 }
+        ]
+      },
+      {
+        "category": "Backend",
+        "icon": "⚙️",
+        "color": "#9C27B0",
+        "items": [
+          { "name": "Node.js / NestJS", "level": 85 },
+          { "name": ".NET Core", "level": 75 },
+          { "name": "REST APIs", "level": 85 },
+          { "name": "TypeORM", "level": 80 }
+        ]
+      },
+      {
+        "category": "Cloud Computing & IaC",
+        "icon": "☁",
+        "color": "#00BCD4",
+        "items": [
+          { "name": "AWS (EKS, Cognito, S3)", "level": 80 },
+          { "name": "Azure (App Service)", "level": 75 },
+          { "name": "Terraform", "level": 70 }
+        ]
+      },
+      {
+        "category": "DevOps & Containers",
+        "icon": "🐳",
+        "color": "#FF9800",
+        "items": [
+          { "name": "Docker / Kubernetes", "level": 80 },
+          { "name": "CI/CD / Git / GitHub", "level": 85 }
+        ]
+      },
+      {
+        "category": "Databases",
+        "icon": "◉",
+        "color": "#4CAF50",
+        "items": [
+          { "name": "PostgreSQL / MySQL / SQL Server", "level": 85 },
+          { "name": "MongoDB / DynamoDB / Cosmos DB", "level": 80 }
+        ]
+      },
+      {
+        "category": "Systems & Security",
+        "icon": "🛡",
+        "color": "#FF5722",
+        "items": [
+          { "name": "Power Automate / Odoo", "level": 80 },
+          { "name": "Secure Development & Networks", "level": 70 }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "number": "01",
+        "title": "Formula 1 Simulation Engine",
+        "type": ".NET & Azure",
+        "description": "Real-time telemetry and performance application that simulates Formula 1 vehicle behavior, managing lap times and advanced analytics.",
+        "achievements": [
+          "Developed RESTful controllers and implemented Clean Architecture patterns for efficient and structured data management.",
+          "Designed a hybrid data persistence schema, using SQL Server as the main engine and MongoDB as a document alternative.",
+          "Deployed and configured in the cloud using Microsoft Azure (App Service), ensuring high availability."
+        ],
+        "tags": [".NET Core", "Azure App Service", "SQL Server", "MongoDB", "REST APIs", "Clean Architecture"],
+        "github": null,
+        "color": "#4FC3F7"
+      },
+      {
+        "number": "02",
+        "title": "Automated Financial Infrastructure",
+        "type": "Multi-Bank Orchestration | AWS & Kubernetes",
+        "description": "Orchestration system designed to automate the provisioning of financial infrastructure in the cloud, ensuring repeatable and scalable environments.",
+        "achievements": [
+          "Deployed, orchestrated, and managed containerized microservices using Docker and Amazon EKS (Kubernetes).",
+          "Automated Infrastructure as Code (IaC) using Terraform.",
+          "Built and implemented CI/CD pipelines using Git for continuous automation.",
+          "Integrated databases (PostgreSQL), messaging, and security by implementing AWS Cognito."
+        ],
+        "tags": ["AWS EKS", "Cognito", "Kubernetes", "Terraform", "Docker", "CI/CD", "PostgreSQL"],
+        "github": null,
+        "color": "#9C27B0"
+      }
+    ],
+    "technologies": {
+      "categories": [
+        {
+          "name": "Backend",
+          "color": "#4FC3F7",
+          "items": ["NestJS", "Node.js", ".NET Core", "PHP", "REST APIs", "Odoo API"]
+        },
+        {
+          "name": "Frontend",
+          "color": "#E91E63",
+          "items": ["React", "TypeScript", "JavaScript", "Vite", "Tailwind CSS", "HTML/CSS"]
+        },
+        {
+          "name": "Databases",
+          "color": "#9C27B0",
+          "items": ["PostgreSQL", "MySQL", "MongoDB", "TypeORM", "DynamoDB", "Cosmos DB"]
+        },
+        {
+          "name": "DevOps & Cloud",
+          "color": "#00BCD4",
+          "items": ["Docker", "Kubernetes", "Terraform", "AWS", "Azure", "GitHub Actions", "CI/CD"]
+        },
+        {
+          "name": "Automation & AI",
+          "color": "#FF9800",
+          "items": ["Power Automate", "Prompt Engineering", "LLM APIs"]
+        },
+        {
+          "name": "Tools",
+          "color": "#4CAF50",
+          "items": ["Git / GitHub", "VS Code", "Postman", "Draw.io", "Power BI"]
+        }
+      ]
+    },
+    "certifications": [
+      {
+        "year": "2023",
+        "name": "Cisco Networking Essentials",
+        "org": "Cisco Networking Academy",
+        "pdf": "Certificados/Networking_Essentials_certificate_bjvega4-espe-edu-ec_f63409ac-ecbd-4458-8830-0b53fefdffb4 (1).pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Introduction to Cybersecurity",
+        "org": "Cisco Networking Academy",
+        "pdf": "Certificados/_certificate_vegabrayan721-gmail-com_1da336fd-53ec-43a0-b3c5-1a64ac57f75f (1).pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Cybersecurity Fundamentals (CompTIA Security+ M1)",
+        "org": "Udemy",
+        "pdf": "Certificados/Ciberseguridad-CompTIA.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Git and GitHub Basics",
+        "org": "Desafío Latam",
+        "pdf": "Certificados/BasesDeGit_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Learn Power BI from scratch",
+        "org": "Udemy",
+        "pdf": "Certificados/AprendePowerBI_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "Develop a Full Stack App: Practical Guide",
+        "org": "Udemy",
+        "pdf": "Certificados/DesarrollaunaaplicaciónFullStacklaguíapráctica_Vega_Brayan.pdf"
+      },
+      {
+        "year": "2025",
+        "name": "No-Code Intelligent Automation",
+        "org": "Desafío Latam",
+        "pdf": "Certificados/AutomatizaciónInteligentesinCódigo_Vega_Brayan.pdf"
+      }
+    ],
+    "softSkills": [
+      {
+        "name": "Analytical Thinking",
+        "icon": "🧠",
+        "desc": "Breaking down complex problems into manageable parts to find effective and efficient solutions."
+      },
+      {
+        "name": "Effective Communication",
+        "icon": "💬",
+        "desc": "Ability to convey technical ideas clearly to both technical teams and non-technical stakeholders."
+      },
+      {
+        "name": "Autonomous Learning",
+        "icon": "📚",
+        "desc": "Self-taught by nature, always exploring new technologies, frameworks, and industry best practices."
+      },
+      {
+        "name": "Results-Oriented",
+        "icon": "🎯",
+        "desc": "Constant focus on delivering concrete and measurable value in every project, iteration, and assigned task."
+      },
+      {
+        "name": "Teamwork",
+        "icon": "🤝",
+        "desc": "Effective collaboration in agile environments, actively contributing to the team's collective success."
+      },
+      {
+        "name": "Problem Solving",
+        "icon": "⚡",
+        "desc": "Systematic and creative approach to complex technical challenges, even under time pressure."
+      }
+    ],
+    "goals": [
+      {
+        "icon": "🚀",
+        "title": "Senior Backend Role",
+        "desc": "Achieve a position as a Senior Backend Developer specializing in cloud-native architectures and distributed microservices."
+      },
+      {
+        "icon": "🏆",
+        "title": "AWS Certification",
+        "desc": "Obtain the AWS Solutions Architect Associate certification in 2026 to validate my cloud knowledge."
+      },
+      {
+        "icon": "🔐",
+        "title": "CompTIA Security+",
+        "desc": "Complete and pass the CompTIA Security+ certification to deepen security applied to development."
+      },
+      {
+        "icon": "🤖",
+        "title": "AI Specialization",
+        "desc": "Deepen the integration of AI/ML systems into real high-impact enterprise applications."
+      },
+      {
+        "icon": "🌎",
+        "title": "Regional Impact",
+        "desc": "Contribute to innovative technological projects that positively transform the digital ecosystem in Latin America."
+      }
+    ],
+    "contact": {
+      "email": "vegabrayan721@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/brayanvegadev/",
+      "github": "https://github.com/BrayanJVega",
+      "whatsapp": "https://wa.me/593995512177",
+      "location": "Quito, Ecuador",
+      "cv": "cv/CV_VEGA_BRAYAN_en.pdf",
+      "message": "Hello! I am available for new job opportunities, technical collaborations, or just to chat about technology. Feel free to reach out!"
+    }
+  }
+}
