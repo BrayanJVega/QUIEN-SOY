@@ -564,8 +564,8 @@ img {
   position: fixed;
   left: 0;
   right: auto;
-  bottom: 2rem;
-  width: 38vw;
+  bottom: 0;
+  width: 46vw;
   /* MAS GRANDE */
   z-index: 250;
   text-align: center;
@@ -595,7 +595,7 @@ img {
 .avatar-img {
   width: auto;
   max-width: 100%;
-  max-height: 70vh;
+  max-height: calc(100vh - 11rem); /* Base max-height to avoid top header when idle */
   object-fit: contain;
   object-position: bottom;
   margin: 0 auto;
@@ -603,6 +603,11 @@ img {
   transition: opacity .28s ease, transform .35s cubic-bezier(.34, 1.56, .64, 1);
   will-change: opacity, transform;
   display: block;
+}
+
+/* Allow active avatar to grow taller since it sits lower */
+.avatar-container:not(.hidden) .avatar-img {
+  max-height: calc(100vh - 6rem);
 }
 
 /* Idle floating animation */
@@ -718,8 +723,7 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 3rem 4rem 3rem 4rem;
-  /* T R B L */
+  padding: 2rem;
 }
 
 /* Columna Izquierda (Contenido) */
@@ -910,7 +914,7 @@ img {
 .panel-body {
   flex: 1;
   overflow-y: auto;
-  padding: 1.5rem 3.5rem 3.5rem;
+  padding: 1rem 1.5rem 2.5rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(79, 195, 247, .4) transparent;
   transition: opacity .4s ease, transform .5s cubic-bezier(.34, 1.56, .64, 1);
@@ -2094,15 +2098,15 @@ img {
   }
 
   .panel-layout {
-    padding: 2rem 2.5rem 2rem 2.5rem;
+    padding: 1.5rem;
   }
 
   .panel-body {
-    padding: 1rem 2.5rem 2.5rem;
+    padding: 1rem 1.5rem 2rem;
   }
 
   .panel-header {
-    padding: 2rem 2.5rem 1.25rem;
+    padding: 1.5rem 1.5rem 1rem;
   }
 }
 
@@ -2122,11 +2126,11 @@ img {
   }
 
   .panel-layout {
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1rem;
   }
 
   .panel-body {
-    padding: .75rem 1.5rem 2rem;
+    padding: 0.5rem 1rem 1.5rem;
   }
 
   .panel-header {
@@ -2189,12 +2193,15 @@ img {
     width: clamp(200px, 60vw, 320px);
     left: 50% !important;
     transform: translateX(-50%);
-    bottom: 47vh !important; /* Just resting on the panel */
-    z-index: 250 !important; /* Always in front */
+    bottom: 47vh !important;
+    /* Just resting on the panel */
+    z-index: 250 !important;
+    /* Always in front */
   }
 
   .avatar-container.hidden {
-    width: clamp(260px, 75vw, 400px); /* MASSIVE on main screen */
+    width: clamp(260px, 75vw, 400px);
+    /* MASSIVE on main screen */
     left: 50% !important;
     transform: translateX(-50%);
     bottom: 4.5rem !important;
@@ -2257,17 +2264,17 @@ img {
   }
 
   .panel-header {
-    padding: 1.25rem 1.25rem .75rem;
+    padding: .75rem .75rem .5rem;
   }
 
   .panel-header h2 {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
 
   .panel-header::after {
     content: '';
     position: absolute;
-    top: .55rem;
+    top: .4rem;
     left: 50%;
     transform: translateX(-50%);
     width: 36px;
@@ -2277,11 +2284,11 @@ img {
   }
 
   .panel-layout {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: .5rem;
   }
 
   .panel-body {
-    padding: .5rem 1rem 2rem;
+    padding: .25rem .5rem 1.5rem;
   }
 
   .hotspot-label {
@@ -2355,19 +2362,19 @@ img {
   }
 
   .panel-header {
-    padding: 1rem 1rem .6rem;
+    padding: .5rem .5rem .4rem;
   }
 
   .panel-header h2 {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
   }
 
   .panel-layout {
-    padding: .75rem .75rem .75rem .75rem;
+    padding: .25rem;
   }
 
   .panel-body {
-    padding: .25rem .75rem 1.5rem;
+    padding: .15rem .25rem 1rem;
   }
 
   .hs-card {
